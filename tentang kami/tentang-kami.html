@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee & Bakery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css  " rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css  ">
+    <style>
+        /* Custom Styles */
+
+
+        /*Navbar start*/
+    .main-header {
+    background-color: #B0733E; 
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.coffee-text, 
+.bakery-text,
+.ampersand-text {
+    color: #f7e6d7; 
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.coffee-text {
+    font-weight: 400;
+}
+
+.ampersand-text {
+    font-weight: 400; 
+    margin: 0 10px; 
+}
+
+.bakery-text {
+    font-weight: 700;
+    color:#121212
+}
+
+.sip-logo {
+    width: 100px; 
+    height: 100px;
+    margin-left: 15px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #f7e6d7;
+    font-size: 2.5rem;
+    font-weight: 400; 
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #fff;
+}
+
+
+.main-nav ul li:nth-child(4) a {
+    font-weight: 700;
+}
+
+/*Navbar finish*/
+
+
+ .section-p {
+            text-align: center;
+        }
+
+.section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #8B4513;
+            text-align: center;
+            margin: 40px 0 20px;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #8B4513;
+            margin: 10px auto;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Montserrat", "roboto";
+}
+
+.footer-container {
+  background-color: #666666;
+  color: #fff;
+  padding: 60px 80px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5em;
+  font-weight: normal;
+  margin: 0;
+  color: #fff;
+}
+
+.footer-bakery {
+  color:#000000
+}
+
+.header-line {
+  width: 100%;
+  border: 0;
+  height: 10px;
+  background-color: #ffffff;
+  margin: 20px 0 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.about-us-section {
+  width: 60%;
+  margin-right: 50px;
+}
+
+.contact-section {
+  width: 30%;
+}
+
+.section-title-footer {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-us-section p {
+  font-size: 1em;
+  line-height: 1.6;
+  max-width: 600px;
+  text-align: justify;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contact-item .icon {
+  font-size: 2em;
+  margin-right: 20px;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.halal-logo img {
+  height: 150px;
+  opacity: 0.8;
+}
+
+.social-media-section {
+  align-items: flex-end;
+  margin-top:20px;
+}
+
+.social-media-title {
+  font-family: "roboto", serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  margin: 0 0 10px 0;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons img {
+  height: 50px;
+  margin-right: 20px;
+  opacity: 0.9;
+}
+
+.bottom-line {
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .footer-container {
+    padding: 40px 40px 20px 40px;
+  }
+
+  .about-us-section,
+  .contact-section {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us-section p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-header h1 {
+    font-size: 2.5em;
+  }
+  .section-title {
+    font-size: 2em;
+  }
+  .social-media-title {
+    font-size: 2em;
+    margin-right: 15px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+  }
+  .halal-logo {
+    margin-bottom: 20px;
+  }
+  .halal-logo img {
+    height: 120px;
+
+  }
+  .social-icons img {
+    height: 40px;
+  }
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="main-header">
+        <div class="logo-container">
+            <span class="coffee-text">Coffee</span>
+            <span class="ampersand-text">&</span>
+            <span class="bakery-text">Bakery</span>
+            <img src="logo-sio.jpeg" alt="SIP Logo" class="sip-logo">
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../tentang kami/tentang-kami.html" style="color:black"><b>Tentang kami</b></a></li>
+                <li><a href="../menu/menu.html">Menu</a></li>
+                <li><a href="../kontak/kontak.html">Kontak</a></li>
+                <li><a href="../Layanan/layanan.html">Layanan</a></li>
+                <li><a href="../FAQ/faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Tentang Kami Section -->
+    <div class="container my-5">
+        <h2 class="section-title">Tentang kami</h2>
+        
+        <!-- Gambar Depan Toko -->
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-8">
+                <!-- TEMPAT UNTUK FOTO DEPAN TOKO - GANTI DENGAN GAMBAR NYATA -->
+                <img src="foto depan2.jpg" class="img-fluid rounded" alt="Depan Toko"> 
+            </div>
+        </div>
+
+        <!-- Paragraf Tentang Kami -->
+        <div class="row">
+            <div class="col-md-12">
+                <p>TEFA Coffee and Bakery adalah teaching factory Politeknik Negeri Jember yang menggabungkan pembelajaran dengan praktik nyata di bidang kopi dan roti. Di sini, mahasiswa belajar mengelola usaha secara profesional sekaligus menghadirkan produk berkualitas bagi masyarakat. Setiap cangkir kopi dan roti yang kami sajikan adalah hasil kreativitas, kerja sama, dan semangat belajar, dengan tujuan memberikan pengalaman terbaik sekaligus mendukung inovasi kuliner.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logo SIP Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="LOGO.png" class="img-fluid rounded-circle mx-auto d-block" alt="Logo SIP">
+            </div>
+            <div class="col-md-8">
+                <h3 class="text-brown">Coffee & Bakery</h3>
+                <p><strong>History TEFA coffee & Bakery</strong><br>
+                TEFA Coffee and Bakery didirikan sebagai bagian dari program Teaching Factory Politeknik Negeri Jember. Tujuannya adalah memberi mahasiswa pengalaman praktik langsung dalam mengelola bisnis kopi dan bakery. Selain sebagai sarana belajar, TEFA juga menyajikan masyarakat dengan produk kopi, roti, dan pastry yang berkualitas, higienis, serta terjangkau.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visi dan Misi -->
+    <div class="container my-5">
+        <h2 class="section-title">Visi dan misi</h2>
+        <p class="section-p">Menjadi pusat pembelajaran kuliner yang inovatif dan berdaya saing, sekaligus memberi layanan terbaik bagi masyarakat.</p>
+    </div>
+
+    <!-- Pencapaian -->
+    <div class="container my-5">
+        <h2 class="section-title">Pencapaian</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- TEMPAT UNTUK FOTO ANDA - GANTI DENGAN GAMBAR NYATA -->
+                <img src="roti1.jpg" class="img-fluid rounded" alt="Pencapaian"> 
+            </div>
+        </div>
+        <div class="mt-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo, metas ac porttitor faucibus, est urna vulputate nisi, nec auctor risus neque in augue. Vestibulum quis urna arcu. Donec libero nunc, efficitur semper euismod non, facilisis consectetur sem. Nullam et odio rhoncus, ultricies purus id, semper nisi. Integer commodo, sapien et imperdiet laoreet, odio dolor ultricies justo, at aliquet eros magna vitae nunc. Quisque id interdum lectus. Cras quis aliquet urna.</p>
+        </div>
+    </div>
+
+ <!-- Footer -->
+  <footer>
+      <div class="footer-container">
+        <div class="footer-header">
+          <h1><span class="coffee"></span> Coffee & </span> 
+            <span class="footer-bakery"> Bakery</span></h1>
+        </div>
+        <hr class="header-line" />
+        <div class="footer-content">
+          <div class="about-us-section">
+            <h2 class="section-title-footer
+            ">Tentang Kami</h2>
+            <p>
+              TEFA Coffee and Bakery adalah teaching factory Politeknik Negeri
+              Jember yang menggabungkan pembelajaran dengan praktik nyata di
+              bidang kopi dan roti. Di sini, mahasiswa belajar mengelola usaha
+              secara profesional sekaligus menghadirkan produk berkualitas bagi
+              masyarakat. Setiap cangkir kopi dan roti yang kami sajikan adalah
+              hasil kreativitas, kerja sama, dan semangat belajar, dengan tujuan
+              memberikan pengalaman terbaik sekaligus mendukung inovasi kuliner.
+            </p>
+          </div>
+          <div class="contact-section">
+            <h2 class="section-title-footer">Kontak</h2>
+            <div class="contact-info">
+              <div class="contact-item">
+                <span class="icon">&#9990;</span>
+                <p>Telepon/WhatsApp<br />+62 812 3456 7890</p>
+              </div>
+              <div class="contact-item">
+                <span class="icon">&#9906;</span>
+                <p>
+                  Jl. Mastrip No.164, Tegalgade, Kec.<br />Sumbersari, Jember -
+                  Politeknik<br />Negeri Jember
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+          <div class="halal-logo">
+            <img src="logo-halal.png" alt="Halal Indonesia Logo"/>
+          </div>
+          <div class="social-media-section">
+            <h2 class="social-media-title">Sosial Media</h2>
+            <div class="social-icons-container">
+              <div class="social-icons">
+                <div>
+                    <img src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-instagram-icon-download-icons-12.png" alt="Instagram" />
+                </div>
+                <div>
+                    <img src="https://parspng.com/wp-content/uploads/2022/10/gmailpng.parspng.com-7.png" alt="Email" />
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js  "></script>
+</body>
+</html>

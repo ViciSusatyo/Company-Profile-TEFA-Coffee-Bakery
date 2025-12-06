@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEFA Coffee & Bakery</title>
+
+    <!-- Font yang  saya gunakan -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons yang saya pakai -->
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Style yang saya gunakan -->
+
+    <link rel="stylesheet" href="style -FAQ.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <header class="main-header">
+        <div class="logo-container">
+            <span class="coffee-text">Coffee</span>
+            <span class="ampersand-text">&</span>
+            <span class="bakery-text">Bakery</span>
+            <img src="logo-sio.jpeg" alt="SIP Logo" class="sip-logo">
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../tentang kami/tentang-kami.html">Tentang kami</a></li>
+                <li><a href="../menu/menu.html">Menu</a></li>
+                <li><a href="../kontak/kontak.html">Kontak</a></li>
+                <li><a href="../Layanan/layanan.html">Layanan</a></li>
+                <li><a href="../FAQ/faq.html" style="color: black;"><b>FAQ</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Navbar Finish -->
+
+    <!-- Hero section Start -->
+
+    <section class="faq-section">
+    
+    <div class="faq-header">
+        <h2 class="faq-title">FAQ (Frequently Asked Question)</h2>
+        <p class="faq-intro">
+            Selamat datang di halaman Frequently Asked Questions (FAQ) kami! Kami tahu bahwa saat menjelajahi produk atau layanan baru, pasti muncul banyak pertanyaan. Daripada Anda harus mengirim email atau menunggu balasan dari tim kami, kami sudah merangkum semua hal yang paling sering ditanyakan pelanggan kami di sini.
+        </p>
+    </div>
+    
+    <div class="faq-content-columns">
+        <div class="faq-left-column">
+            <div class="faq-left-column">
+        <div class="accordion-item faq-item">
+          <div class="question-title">
+            <span class="q-number">1.</span>
+            <h3 class="q-text">Apa itu TEFA Coffee & Bakery?</h3>
+            <span class="q-toggle">+</span>
+          </div>
+            <div class="answer-body"> 
+            <p>TEFA Coffee & Bakery adalah tempat pelatihan sekaligus kafe dan bakery yang dikelola oleh siswa/mahasiswa dengan bimbingan guru/dosen. Selain menyediakan kopi dan roti berkualitas, TEFA juga menjadi sarana pembelajaran berbasis industri.</p>
+          </div>
+        </div>
+    
+        </div>
+            <div class="accordion-item faq-item">
+              <div class="question-title">
+                <span class="q-number">2.</span>
+                <h3 class="q-text">Apa arti TEFA?</h3>
+                <span class="q-toggle">+</span>
+              </div>
+            <div class="answer-body"> 
+            <p>TEFA adalah singkatan dari Teaching Factory, yaitu konsep pembelajaran berbasis produksi nyata, sehingga siswa tidak hanya belajar teori, tetapi juga praktik langsung di dunia usaha.</p>
+        </div>
+      </div>
+            
+            <div class="accordion-item faq-item">
+              <div class="question-title">
+                <span class="q-number">3.</span>
+                <h3 class="q-text">Di mana lokasi TEFA Coffee & Bakery?</h3>
+                <span class="q-toggle">+</span>
+              </div>
+            <div class="answer-body"> 
+            <p>Jl. Tawang Mangu No.68, Lingkungan Panji, Tegalgede, Kec. Sumbersari, Kabupaten Jember, Jawa Timur 68124</p>
+        </div>
+      </div>
+            
+            <div class="accordion-item faq-item">
+              <div class="question-title">
+                <span class="q-number">4.</span>
+                <h3 class="q-text">Bagaimana Cara Mengajukan Keluhan?</h3>
+                <span class="q-toggle">+</span>
+              </div>
+            <div class="answer-body"> 
+            <p>Kami sudah menyediakan kontak yang dapat dihubunngin melalui halaman kontak, kalian dapat menghubungi kami jika terdapat keluhan</p>
+        </div>
+      </div>
+
+        </div>
+</section>
+
+    <!-- Hero section Finish -->
+
+    <!-- Feather Icont -->
+
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My JavaScript -->
+
+    <script src="script.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var questions = document.querySelectorAll('.question-title');
+        questions.forEach(function(question) {
+            question.addEventListener('click', function() {
+                var parentItem = question.closest('.accordion-item');
+                var toggleButton = question.querySelector('.q-toggle');
+                if (parentItem.classList.contains('active')) {
+                    parentItem.classList.remove('active');
+                    toggleButton.textContent = '+';
+                } else {
+                    parentItem.classList.add('active');
+                    toggleButton.textContent = '–';
+                }
+            });
+        });
+    });
+</script>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-header">
+          <h1><span class="coffee"></span> Coffee & </span> 
+            <span class="footer-bakery"> Bakery</span></h1>
+        </div>
+        <hr class="header-line" />
+        <div class="footer-content">
+          <div class="about-us-section">
+            <h2 class="section-title">Tentang Kami</h2>
+            <p>
+              TEFA Coffee and Bakery adalah teaching factory Politeknik Negeri
+              Jember yang menggabungkan pembelajaran dengan praktik nyata di
+              bidang kopi dan roti. Di sini, mahasiswa belajar mengelola usaha
+              secara profesional sekaligus menghadirkan produk berkualitas bagi
+              masyarakat. Setiap cangkir kopi dan roti yang kami sajikan adalah
+              hasil kreativitas, kerja sama, dan semangat belajar, dengan tujuan
+              memberikan pengalaman terbaik sekaligus mendukung inovasi kuliner.
+            </p>
+          </div>
+          <div class="contact-section">
+            <h2 class="section-title">Kontak</h2>
+            <div class="contact-info">
+              <div class="contact-item">
+                <span class="icon">&#9990;</span>
+                <p>Telepon/WhatsApp<br />+62 823-3349-7811</p>
+              </div>
+              <div class="contact-item">
+                <span class="icon">&#9906;</span>
+                <p>
+                  Jl. Mastrip No.164, Tegalgade, Kec.<br />Sumbersari, Jember -
+                  Politeknik<br />Negeri Jember
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+          <div class="halal-logo">
+            <img src="logo-halal.png" alt="Halal Indonesia Logo"/>
+          </div>
+          <div class="social-media-section">
+            <h2 class="social-media-title">Sosial Media</h2>
+            <div class="social-icons-container">
+              <div class="social-icons">
+                <div>
+                    <img src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-instagram-icon-download-icons-12.png" alt="Instagram" />
+                </div>
+                <div>
+                    <img src="https://parspng.com/wp-content/uploads/2022/10/gmailpng.parspng.com-7.png" alt="Email" />
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

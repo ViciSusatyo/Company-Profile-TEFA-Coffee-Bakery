@@ -1,0 +1,453 @@
+:root {
+  --primary: #b6895b;
+  --bg: #ffffff;
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--bg);
+    color: #000000;
+  }
+
+  /* Navbar */
+
+   .main-header {
+    background-color: #B0733E; 
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.coffee-text, 
+.bakery-text,
+.ampersand-text {
+    color: #f7e6d7; 
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.coffee-text {
+    font-weight: 400;
+}
+
+.ampersand-text {
+    font-weight: 400; 
+    margin: 0 10px; 
+}
+
+.bakery-text {
+    font-weight: 700;
+    color:#121212
+}
+
+.sip-logo {
+    width: 100px; 
+    height: 100px;
+    margin-left: 15px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #f7e6d7;
+    font-size: 2.5rem;
+    font-weight: 400; 
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #fff;
+}
+
+/
+.main-nav ul li:nth-child(4) a {
+    font-weight: 700;
+}
+  #Hamburger-menu {
+    display: none;
+  }
+
+  /* Media Queries */
+
+  /* Hero Section  */
+
+  .Hero {
+    min-height: 150vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Laptop */
+
+  @media (max-width: 1366px) {
+    html {
+      font-size: 75%;
+    }
+  }
+
+  /* Tablet */
+
+  @media (max-width: 768px) {
+    html {
+      font-size: 62.5%;
+    }
+
+    #Hamburger-menu {
+      display: inline-block;
+    }
+
+    .Navbar .navbar-nav {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background-color: #d7c8bc;
+      width: 25rem;
+      height: 80vh;
+    }
+
+    .Navbar .navbar-nav.active {
+      right: 0;
+    }
+
+    .Navbar .navbar-nav a {
+      color: var(--bg);
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+
+    .Navbar .navbar-nav a::after {
+      transform-origin: 0 0;
+    }
+
+    .Navbar .navbar-nav a:hover::after {
+      transform: scaleX(0.2);
+    }
+  }
+
+  /* Mobile */
+
+  @media (max-width: 450%) {
+    html {
+      font-size: 55%;
+    }
+  }
+}
+
+/* SECTION */
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;  
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.services-column {
+    padding: 10px;
+}
+
+/* --- Kolom Kiri: Teks Layanan --- */
+
+.services-left {
+    flex: 1; /* Ambil proporsi 1 bagian */
+    padding-right: 40px;
+}
+
+.service-item {
+    margin-bottom: 25px;
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Judul Layanan (PEMESANAN ONLINE, BOOKING, MITRA) */
+.service-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    margin-right: 15px;
+}
+
+/* Kotak Tombol Placeholder */
+.service-button-placeholder {
+    background-color: #966946;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 2px 20px; 
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.service-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.service-separator {
+    border: none;
+    border-top: 1px dashed #ccc;
+    margin: 30px 0;
+}
+
+.services-right {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-images-row {
+    display: flex;
+    gap: 15px; 
+    margin-bottom: 20px;
+}
+
+.image-box {
+    background-color: #fff;
+    border: 1px solid #ffffff;  
+    border-radius: 50px;
+}
+.square-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Gambar Bawah Persegi Panjang */
+.bottom-image-box {
+    background-color: #966946;
+    padding: 15px; 
+    border-radius: 10px;
+    max-width: 443px;
+}
+
+.rect-img {
+    width: 413px;
+    height: 310px;
+    display: block;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Montserrat", "roboto";
+}
+
+.footer-container {
+  background-color: #666666;
+  color: #fff;
+  padding: 60px 80px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5em;
+  font-weight: normal;
+  margin: 0;
+  color: #fff;
+}
+
+.footer-bakery {
+  color:#000000
+}
+
+.header-line {
+  width: 100%;
+  border: 0;
+  height: 10px;
+  background-color: #ffffff;
+  margin: 20px 0 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.about-us-section {
+  width: 60%;
+  margin-right: 50px;
+}
+
+.contact-section {
+  width: 30%;
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-us-section p {
+  font-size: 1em;
+  line-height: 1.6;
+  max-width: 600px;
+  text-align: justify;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contact-item .icon {
+  font-size: 2em;
+  margin-right: 20px;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.halal-logo img {
+  height: 150px;
+  opacity: 0.8;
+}
+
+.social-media-section {
+  align-items: flex-end;
+  margin-top:20px;
+}
+
+.social-media-title {
+  font-family: "roboto", serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  margin: 0 0 10px 0;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons img {
+  height: 50px;
+  margin-right: 20px;
+  opacity: 0.9;
+}
+
+.bottom-line {
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .footer-container {
+    padding: 40px 40px 20px 40px;
+  }
+
+  .about-us-section,
+  .contact-section {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us-section p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-header h1 {
+    font-size: 2.5em;
+  }
+  .section-title {
+    font-size: 2em;
+  }
+  .social-media-title {
+    font-size: 2em;
+    margin-right: 15px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+  }
+  .halal-logo {
+    margin-bottom: 20px;
+  }
+  .halal-logo img {
+    height: 120px;
+
+  }
+  .social-icons img {
+    height: 40px;
+  }
+}
